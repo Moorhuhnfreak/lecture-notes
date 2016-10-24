@@ -1,0 +1,1 @@
+javacOptions ++= Seq("-Xlint:unchecked")
