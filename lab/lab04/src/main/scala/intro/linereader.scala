@@ -7,6 +7,12 @@ import scala.io.Source
 //     run src/main/scala/intro/linereader.scala
 //
 // Then choose `intro.Reader` from the list.
+//
+// This file reimplements an example from Chapter 3 of the book:
+//
+//     Programming in Scala -- Second Edition. artima press.
+//     Odersky, Spoon, Venners.
+//
 trait LineReader {
 
   // Off-topic (1): Approx. correspondence between Scala and Java definitions:
@@ -32,7 +38,7 @@ trait LineReader {
     for (line <- lines) {
       println(showLine(line, max))
     }
-    // ====>
+    // desugares to ====>
     // lines.foreach((line) => println(showLine(line, max)))
   }
 
