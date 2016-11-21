@@ -3,7 +3,7 @@ package showable
 import java.util.Comparator
 
 // Here we implement the very first homework in Scala. By using implicit
-// parameters we improve the overhead needed to create instances of
+// parameters we improve the boilerplate overhead needed to create instances of
 // Showable[T] for T being some nested tuple.
 
 // Sidenote:
