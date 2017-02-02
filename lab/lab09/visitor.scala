@@ -166,8 +166,8 @@ object internal {
   }
 
   trait Eval extends Visitor[Int] {
-    def visitLit(l: Lit): Int = l.n
-    def visitAdd(a: Add, left: Int, right: Int): Int = left + right
+    def visitLit(n: Int): Int = n
+    def visitAdd(left: Int, right: Int): Int = left + right
   }
 }
 
